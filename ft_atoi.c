@@ -6,11 +6,11 @@
 /*   By: sscottie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/24 22:09:14 by sscottie          #+#    #+#             */
-/*   Updated: 2019/04/29 01:41:28 by sscottie         ###   ########.fr       */
+/*   Updated: 2019/07/08 02:04:27 by sscottie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
-#include <stdio.h>
+
+#include "libft.h"
 
 int		ft_atoi(const char *str)
 {
@@ -33,10 +33,4 @@ int		ft_atoi(const char *str)
 	else if (res > 9223372036854775807 && negative == -1)
 		return (0);
 	return ((int)res * negative);
-}
-int main()
-{
-	printf( "%d\n", ft_atoi("2222222222222222222"));
-	printf( "%d\n", atoi("2222222222222222222"));
-	return (0);
 }
